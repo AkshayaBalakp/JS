@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Square root</title>
+    </head>
+    <body>
+        <script>
+            function check(){
+                var n;
+                n=parseInt(document.getElementById("number").value);
+                document.getElementById("answer").value = Math.sqrt(n);
+
+            }
+
+        </script>
+
+        <p>Number: <input type="number" id="number"></p>
+        <button onclick="check()">Check</button>
+        <p>Result = <input id="answer"></p>
+    </body>
+</html>

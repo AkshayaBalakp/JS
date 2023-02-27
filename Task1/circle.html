@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Console</title>
+    </head>
+    <body>
+        <script>
+            function CalArea(Radius) {
+                var Radius;
+                Radius=parseInt(document.getElementById("radius").value);
+                var area =  Radius * Radius * 3.14;
+                document.getElementById("answer").value=area;
+            }    
+        </script>
+        <p>Radius: <input type="number" id="radius" placeholder="Radius of the circle"></p>
+        <button onclick="CalArea()">Check</button>
+        <p>Result = <input id="answer"></p>
+    </body>
+    
+
+</html>

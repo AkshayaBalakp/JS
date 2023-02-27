@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>positive number</title>
+    </head>
+    <body>
+        <script>
+            function check(){
+                var n;
+                n=parseInt(document.getElementById("number").value);
+                if(n>0){
+                    document.getElementById("answer").value = "Positive";
+
+                }
+                else if(n<0){
+                    document.getElementById("answer").value = "negative";
+
+                }
+                else{
+                    document.getElementById("answer").value = "0";
+
+                }
+            }
+        
+
+        </script>
+        <p>Number: <input type="number" id="number"></p>
+        <button onclick="check()">Check</button>
+        <p>Result = <input id="answer"></p>
+
+    </body>
+</html>

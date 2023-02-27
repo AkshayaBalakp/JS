@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Kilometer to miles</title>
+    </head>
+    <body>
+        <script>
+            function convert() {
+        var km = document.getElementById("kelometer").value;
+        var miles = km / 1.609;
+        miles = miles.toFixed(4);
+        document.getElementById("res").value=miles;
+        }
+        </script>
+        <p>Kilometer:<input type="number" id="kelometer"></p>
+        <button onclick="convert()">Convert</button>
+        <p>Result:<input id="res"></p>
+    </body>
+</html>
