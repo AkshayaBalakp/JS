@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Last digit</title>
+    </head>
+    <body>
+        <script>
+            var a=parseInt(prompt("Enter the first number:"));
+            var b=parseInt(prompt("Enter the Second number"));
+            var c=parseInt(prompt("Enter the third number:"));
+
+            var rslt1=a%10;
+            var rslt2=b%10;
+            var rslt3=c%10;
+
+            if(rslt1==rslt2 && rslt1==rslt3){
+                console.log("${a}, ${b} and ${c} have the same last digit");
+
+            }
+            else{
+                console.log("${a}, ${b} and ${c} have different last digit.");
+
+            }
+
+        </script>
+    </body>
+</html>

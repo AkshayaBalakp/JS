@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Amstrong number in interval</title>
+    </head>
+    <body>
+        <script>
+            var low=parseInt(prompt("enter lower limit:"));
+            var high=parseInt(prompt("enter higher limit:"));
+
+            for(var i=low;i<=high;i++){
+                var digit=i.toString.length();
+                var sum=0,temp=i;
+
+                while(temp>0){
+                    var remainder = temp % 10;
+                    sum += remainder ** digits;
+                    temp = parseInt(temp / 10);
+                }
+                if (sum == i) {
+                    console.log(i);
+                }
+            }
+
+        </script>
+    </body>
+</html>
